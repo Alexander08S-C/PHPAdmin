@@ -1,0 +1,20 @@
+-Haremos una creacion para un alumnado.
+-En primer lugar crearemos una base de datos.
+create database mi base_de_datos;
+     use mi_base_de_datos;
+          
+         create table alumno(
+         codigo_alumno int AUTO_INCREMENT PRIMARY KEY,
+         nombre varchar(50) not null,
+         apellido_paterno varchar(50) not null,
+         apellido_materno varchar(50) not null,
+         dni char(8),not null,
+         fecha_nacimiento date null,
+         pension decimal(8,2) null,
+         edad int null,
+         fecha_registro datetime not null,
+         foto LONGBLOB null,
+         observacion text
+          );
+
+#listo en este caso le dariamos en el boton go y eso seria todo.
